@@ -1,0 +1,238 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Bonus	.\bak_tanks.py	/^class Bonus():$/;"	c
+Bonus	.\tanks.py	/^class Bonus():$/;"	c
+Bullet	.\bak_tanks.py	/^class Bullet():$/;"	c
+Bullet	.\gxd.py	/^class Bullet():$/;"	c
+Bullet	.\tanks.py	/^class Bullet():$/;"	c
+Castle	.\bak_tanks.py	/^class Castle():$/;"	c
+Castle	.\tanks.py	/^class Castle():$/;"	c
+Enemy	.\bak_tanks.py	/^class Enemy(Tank):$/;"	c
+Enemy	.\tanks.py	/^class Enemy(Tank):$/;"	c
+Explosion	.\bak_tanks.py	/^class Explosion():$/;"	c
+Explosion	.\tanks.py	/^class Explosion():$/;"	c
+Game	.\bak_tanks.py	/^class Game():$/;"	c
+Game	.\gxd.py	/^class Game():$/;"	c
+Game	.\tanks.py	/^class Game():$/;"	c
+Label	.\bak_tanks.py	/^class Label():$/;"	c
+Label	.\tanks.py	/^class Label():$/;"	c
+Level	.\bak_tanks.py	/^class Level():$/;"	c
+Level	.\tanks.py	/^class Level():$/;"	c
+Player	.\bak_tanks.py	/^class Player(Tank):$/;"	c
+Player	.\tanks.py	/^class Player(Tank):$/;"	c
+TILE_SIZE	.\bak_tanks.py	/^	TILE_SIZE = 16$/;"	v	class:Game
+TILE_SIZE	.\bak_tanks.py	/^	TILE_SIZE = 16$/;"	v	class:Level
+TILE_SIZE	.\tanks.py	/^	TILE_SIZE = 16$/;"	v	class:Game
+TILE_SIZE	.\tanks.py	/^	TILE_SIZE = 16$/;"	v	class:Level
+Tank	.\bak_tanks.py	/^class Tank():$/;"	c
+Tank	.\gxd.py	/^class Tank():$/;"	c
+Tank	.\tanks.py	/^class Tank():$/;"	c
+Timer	.\bak_tanks.py	/^class Timer(object):$/;"	c
+Timer	.\tanks.py	/^class Timer(object):$/;"	c
+__init__	.\bak_tanks.py	/^	def __init__(self):$/;"	m	class:Castle
+__init__	.\bak_tanks.py	/^	def __init__(self):$/;"	m	class:Game
+__init__	.\bak_tanks.py	/^	def __init__(self):$/;"	m	class:Timer
+__init__	.\bak_tanks.py	/^	def __init__(self, level):$/;"	m	class:Bonus
+__init__	.\bak_tanks.py	/^	def __init__(self, level, position, direction, damage = 100, speed = 5):$/;"	m	class:Bullet
+__init__	.\bak_tanks.py	/^	def __init__(self, level, side, position = None, direction = None, filename = None):$/;"	m	class:Tank
+__init__	.\bak_tanks.py	/^	def __init__(self, level, type, position = None, direction = None, filename = None):$/;"	m	class:Enemy
+__init__	.\bak_tanks.py	/^	def __init__(self, level, type, position = None, direction = None, filename = None):$/;"	m	class:Player
+__init__	.\bak_tanks.py	/^	def __init__(self, level_nr = None):$/;"	m	class:Level
+__init__	.\bak_tanks.py	/^	def __init__(self, position, interval = None, images = None):$/;"	m	class:Explosion
+__init__	.\bak_tanks.py	/^	def __init__(self, position, text = "", duration = None):$/;"	m	class:Label
+__init__	.\gxd.py	/^	def __init__(self):$/;"	m	class:Game
+__init__	.\gxd.py	/^	def __init__(self):$/;"	m	class:Tank
+__init__	.\gxd.py	/^	def __init__(self,position, direction):$/;"	m	class:Bullet
+__init__	.\tanks.py	/^	def __init__(self):$/;"	m	class:Castle
+__init__	.\tanks.py	/^	def __init__(self):$/;"	m	class:Game
+__init__	.\tanks.py	/^	def __init__(self):$/;"	m	class:Timer
+__init__	.\tanks.py	/^	def __init__(self, level):$/;"	m	class:Bonus
+__init__	.\tanks.py	/^	def __init__(self, level, position, direction, damage = 100, speed = 5):$/;"	m	class:Bullet
+__init__	.\tanks.py	/^	def __init__(self, level, side, position = None, direction = None, filename = None):$/;"	m	class:Tank
+__init__	.\tanks.py	/^	def __init__(self, level, type, position = None, direction = None, filename = None):$/;"	m	class:Enemy
+__init__	.\tanks.py	/^	def __init__(self, level, type, position = None, direction = None, filename = None):$/;"	m	class:Player
+__init__	.\tanks.py	/^	def __init__(self, level_nr = None):$/;"	m	class:Level
+__init__	.\tanks.py	/^	def __init__(self, position, interval = None, images = None):$/;"	m	class:Explosion
+__init__	.\tanks.py	/^	def __init__(self, position, text = "", duration = None):$/;"	m	class:Label
+add	.\bak_tanks.py	/^	def add(self, interval, f, repeat = -1):$/;"	m	class:Timer
+add	.\tanks.py	/^	def add(self, interval, f, repeat = -1):$/;"	m	class:Timer
+animateIntroScreen	.\bak_tanks.py	/^	def animateIntroScreen(self):$/;"	m	class:Game
+animateIntroScreen	.\tanks.py	/^	def animateIntroScreen(self):$/;"	m	class:Game
+bonuses	.\bak_tanks.py	/^	bonuses = []$/;"	v	class:Game
+bonuses	.\tanks.py	/^	bonuses = []$/;"	v	class:Game
+buildFortress	.\bak_tanks.py	/^	def buildFortress(self, tile):$/;"	m	class:Level
+buildFortress	.\tanks.py	/^	def buildFortress(self, tile):$/;"	m	class:Level
+bulletImpact	.\bak_tanks.py	/^	def bulletImpact(self, friendly_fire = False, damage = 100, tank = None):$/;"	m	class:Tank
+bulletImpact	.\tanks.py	/^	def bulletImpact(self, friendly_fire = False, damage = 100, tank = None):$/;"	m	class:Tank
+bullets	.\bak_tanks.py	/^	bullets = []$/;"	v	class:Game
+bullets	.\tanks.py	/^	bullets = []$/;"	v	class:Game
+castle	.\bak_tanks.py	/^	castle = Castle()$/;"	v	class:Game
+castle	.\tanks.py	/^	castle = Castle()$/;"	v	class:Game
+chunks	.\bak_tanks.py	/^	def chunks(self, l, n):$/;"	m	class:Game
+chunks	.\tanks.py	/^	def chunks(self, l, n):$/;"	m	class:Game
+controller	.\gxd.py	/^	def controller(self):$/;"	m	class:Game
+destroy	.\bak_tanks.py	/^	def destroy(self):$/;"	m	class:Bullet
+destroy	.\bak_tanks.py	/^	def destroy(self):$/;"	m	class:Castle
+destroy	.\bak_tanks.py	/^	def destroy(self):$/;"	m	class:Label
+destroy	.\bak_tanks.py	/^	def destroy(self, uuid_nr):$/;"	m	class:Timer
+destroy	.\gxd.py	/^	def destroy(self):$/;"	m	class:Bullet
+destroy	.\tanks.py	/^	def destroy(self):$/;"	m	class:Bullet
+destroy	.\tanks.py	/^	def destroy(self):$/;"	m	class:Castle
+destroy	.\tanks.py	/^	def destroy(self):$/;"	m	class:Label
+destroy	.\tanks.py	/^	def destroy(self, uuid_nr):$/;"	m	class:Timer
+draw	.\bak_tanks.py	/^	def draw(self):$/;"	m	class:Bonus
+draw	.\bak_tanks.py	/^	def draw(self):$/;"	m	class:Bullet
+draw	.\bak_tanks.py	/^	def draw(self):$/;"	m	class:Castle
+draw	.\bak_tanks.py	/^	def draw(self):$/;"	m	class:Explosion
+draw	.\bak_tanks.py	/^	def draw(self):$/;"	m	class:Game
+draw	.\bak_tanks.py	/^	def draw(self):$/;"	m	class:Label
+draw	.\bak_tanks.py	/^	def draw(self):$/;"	m	class:Tank
+draw	.\bak_tanks.py	/^	def draw(self, tiles = None):$/;"	m	class:Level
+draw	.\gxd.py	/^	def draw(self):$/;"	m	class:Bullet
+draw	.\gxd.py	/^	def draw(self):$/;"	m	class:Game
+draw	.\gxd.py	/^	def draw(self):$/;"	m	class:Tank
+draw	.\tanks.py	/^	def draw(self):$/;"	m	class:Bonus
+draw	.\tanks.py	/^	def draw(self):$/;"	m	class:Bullet
+draw	.\tanks.py	/^	def draw(self):$/;"	m	class:Castle
+draw	.\tanks.py	/^	def draw(self):$/;"	m	class:Explosion
+draw	.\tanks.py	/^	def draw(self):$/;"	m	class:Game
+draw	.\tanks.py	/^	def draw(self):$/;"	m	class:Label
+draw	.\tanks.py	/^	def draw(self):$/;"	m	class:Tank
+draw	.\tanks.py	/^	def draw(self, tiles = None):$/;"	m	class:Level
+drawIntroScreen	.\bak_tanks.py	/^	def drawIntroScreen(self, put_on_surface = True):$/;"	m	class:Game
+drawIntroScreen	.\tanks.py	/^	def drawIntroScreen(self, put_on_surface = True):$/;"	m	class:Game
+drawSidebar	.\bak_tanks.py	/^	def drawSidebar(self):$/;"	m	class:Game
+drawSidebar	.\tanks.py	/^	def drawSidebar(self):$/;"	m	class:Game
+endSpawning	.\bak_tanks.py	/^	def endSpawning(self):$/;"	m	class:Tank
+endSpawning	.\tanks.py	/^	def endSpawning(self):$/;"	m	class:Tank
+enemies	.\bak_tanks.py	/^	enemies = []$/;"	v	class:Game
+enemies	.\tanks.py	/^	enemies = []$/;"	v	class:Game
+explode	.\bak_tanks.py	/^	def explode(self):$/;"	m	class:Bullet
+explode	.\bak_tanks.py	/^	def explode(self):$/;"	m	class:Tank
+explode	.\tanks.py	/^	def explode(self):$/;"	m	class:Bullet
+explode	.\tanks.py	/^	def explode(self):$/;"	m	class:Tank
+fasterBullet	.\tanks.py	/^	def fasterBullet(self, player, fast = True, duration = None):$/;"	m	class:Game
+fasterSpeed	.\tanks.py	/^	def fasterSpeed(self, player, fast = True, duration = None):$/;"	m	class:Game
+finishLevel	.\bak_tanks.py	/^	def finishLevel(self):$/;"	m	class:Game
+finishLevel	.\tanks.py	/^	def finishLevel(self):$/;"	m	class:Game
+fire	.\bak_tanks.py	/^	def fire(self, forced = False):$/;"	m	class:Tank
+fire	.\gxd.py	/^	def fire(self):$/;"	m	class:Tank
+fire	.\tanks.py	/^	def fire(self, forced = False):$/;"	m	class:Tank
+flag	.\gxd.py	/^	flag = True$/;"	v
+g	.\gxd.py	/^	g=Game()$/;"	v
+game	.\bak_tanks.py	/^	game = Game()$/;"	v	class:Game
+game	.\tanks.py	/^	game = Game()$/;"	v	class:Game
+gameOver	.\bak_tanks.py	/^	def gameOver(self):$/;"	m	class:Game
+gameOver	.\tanks.py	/^	def gameOver(self):$/;"	m	class:Game
+gameOverScreen	.\bak_tanks.py	/^	def gameOverScreen(self):$/;"	m	class:Game
+gameOverScreen	.\tanks.py	/^	def gameOverScreen(self):$/;"	m	class:Game
+generatePath	.\bak_tanks.py	/^	def generatePath(self, direction = None, fix_direction = False):$/;"	m	class:Enemy
+generatePath	.\tanks.py	/^	def generatePath(self, direction = None, fix_direction = False):$/;"	m	class:Enemy
+getFreeSpawningPosition	.\bak_tanks.py	/^	def getFreeSpawningPosition(self):$/;"	m	class:Enemy
+getFreeSpawningPosition	.\tanks.py	/^	def getFreeSpawningPosition(self):$/;"	m	class:Enemy
+gtimer	.\bak_tanks.py	/^	gtimer = Timer()$/;"	v	class:Game
+gtimer	.\tanks.py	/^	gtimer = Timer()$/;"	v	class:Game
+hitTile	.\bak_tanks.py	/^	def hitTile(self, pos, power = 1, sound = False):$/;"	m	class:Level
+hitTile	.\tanks.py	/^	def hitTile(self, pos, power = 1, sound = False):$/;"	m	class:Level
+inc_interval	.\tanks.py	/^	def inc_interval(self,uuid,interval):$/;"	m	class:Timer
+labels	.\bak_tanks.py	/^	labels = []$/;"	v	class:Game
+labels	.\tanks.py	/^	labels = []$/;"	v	class:Game
+loadHiscore	.\bak_tanks.py	/^	def loadHiscore(self):$/;"	m	class:Game
+loadHiscore	.\tanks.py	/^	def loadHiscore(self):$/;"	m	class:Game
+loadLevel	.\bak_tanks.py	/^	def loadLevel(self, level_nr = 1):$/;"	m	class:Level
+loadLevel	.\tanks.py	/^	def loadLevel(self, level_nr = 1):$/;"	m	class:Level
+move	.\bak_tanks.py	/^	def move(self):$/;"	m	class:Enemy
+move	.\bak_tanks.py	/^	def move(self, direction):$/;"	m	class:Player
+move	.\gxd.py	/^	def move(self):$/;"	m	class:Bullet
+move	.\gxd.py	/^	def move(self, direction):$/;"	m	class:Tank
+move	.\tanks.py	/^	def move(self):$/;"	m	class:Enemy
+move	.\tanks.py	/^	def move(self, direction):$/;"	m	class:Player
+multiBullet	.\tanks.py	/^	def multiBullet(self, player, multi = True, duration = None):$/;"	m	class:Game
+nearest	.\bak_tanks.py	/^	def nearest(self, num, base):$/;"	m	class:Tank
+nearest	.\tanks.py	/^	def nearest(self, num, base):$/;"	m	class:Tank
+nextLevel	.\bak_tanks.py	/^	def nextLevel(self):$/;"	m	class:Game
+nextLevel	.\tanks.py	/^	def nextLevel(self):$/;"	m	class:Game
+os	.\bak_tanks.py	/^import os, pygame, time, random, uuid$/;"	i
+os	.\tanks.py	/^import os, pygame, time, random, uuid$/;"	i
+play_sounds	.\bak_tanks.py	/^	play_sounds = True$/;"	v	class:Game
+play_sounds	.\tanks.py	/^	play_sounds = False$/;"	v	class:Game
+players	.\bak_tanks.py	/^	players = []$/;"	v	class:Game
+players	.\tanks.py	/^	players = []$/;"	v	class:Game
+pygame	.\bak_tanks.py	/^import os, pygame, time, random, uuid$/;"	i
+pygame	.\gxd.py	/^import pygame$/;"	i
+pygame	.\tanks.py	/^import os, pygame, time, random, uuid$/;"	i
+random	.\bak_tanks.py	/^import os, pygame, time, random, uuid$/;"	i
+random	.\tanks.py	/^import os, pygame, time, random, uuid$/;"	i
+rebuild	.\bak_tanks.py	/^	def rebuild(self):$/;"	m	class:Castle
+rebuild	.\tanks.py	/^	def rebuild(self):$/;"	m	class:Castle
+reloadPlayers	.\bak_tanks.py	/^	def reloadPlayers(self):$/;"	m	class:Game
+reloadPlayers	.\tanks.py	/^	def reloadPlayers(self):$/;"	m	class:Game
+reset	.\bak_tanks.py	/^	def reset(self):$/;"	m	class:Player
+reset	.\tanks.py	/^	def reset(self):$/;"	m	class:Player
+respawnPlayer	.\bak_tanks.py	/^	def respawnPlayer(self, player, clear_scores = False):$/;"	m	class:Game
+respawnPlayer	.\tanks.py	/^	def respawnPlayer(self, player, clear_scores = False):$/;"	m	class:Game
+rotate	.\bak_tanks.py	/^	def rotate(self, direction, fix_position = True):$/;"	m	class:Tank
+rotate	.\gxd.py	/^	def rotate(self, direction):$/;"	m	class:Tank
+rotate	.\tanks.py	/^	def rotate(self, direction, fix_position = True):$/;"	m	class:Tank
+run	.\gxd.py	/^	def run(self):$/;"	m	class:Game
+saveHiscore	.\bak_tanks.py	/^	def saveHiscore(self, hiscore):$/;"	m	class:Game
+saveHiscore	.\tanks.py	/^	def saveHiscore(self, hiscore):$/;"	m	class:Game
+screen	.\bak_tanks.py	/^	screen = None$/;"	v	class:Game
+screen	.\gxd.py	/^	screen = None$/;"	v
+screen	.\tanks.py	/^	screen = None$/;"	v	class:Game
+setParalised	.\bak_tanks.py	/^	def setParalised(self, paralised = True):$/;"	m	class:Tank
+setParalised	.\tanks.py	/^	def setParalised(self, paralised = True):$/;"	m	class:Tank
+shieldPlayer	.\bak_tanks.py	/^	def shieldPlayer(self, player, shield = True, duration = None):$/;"	m	class:Game
+shieldPlayer	.\tanks.py	/^	def shieldPlayer(self, player, shield = True, duration = None):$/;"	m	class:Game
+showMenu	.\bak_tanks.py	/^	def showMenu(self):$/;"	m	class:Game
+showMenu	.\tanks.py	/^	def showMenu(self):$/;"	m	class:Game
+showScores	.\bak_tanks.py	/^	def showScores(self):$/;"	m	class:Game
+showScores	.\tanks.py	/^	def showScores(self):$/;"	m	class:Game
+slowlyBullet	.\tanks.py	/^	def slowlyBullet(self, player, slow = True, duration = None):$/;"	m	class:Game
+slowlySpeed	.\tanks.py	/^	def slowlySpeed(self, player, slowly = True, duration = None):$/;"	m	class:Game
+sounds	.\bak_tanks.py	/^	sounds = {}$/;"	v	class:Game
+sounds	.\tanks.py	/^	sounds = {}$/;"	v	class:Game
+spawnBonus	.\bak_tanks.py	/^	def spawnBonus(self):$/;"	m	class:Enemy
+spawnBonus	.\tanks.py	/^	def spawnBonus(self):$/;"	m	class:Enemy
+spawnEnemy	.\bak_tanks.py	/^	def spawnEnemy(self):$/;"	m	class:Game
+spawnEnemy	.\tanks.py	/^	def spawnEnemy(self):$/;"	m	class:Game
+sprites	.\bak_tanks.py	/^	sprites = None$/;"	v	class:Game
+sprites	.\tanks.py	/^	sprites = None$/;"	v	class:Game
+time	.\bak_tanks.py	/^import os, pygame, time, random, uuid$/;"	i
+time	.\tanks.py	/^import os, pygame, time, random, uuid$/;"	i
+toggleEnemyFreeze	.\bak_tanks.py	/^	def toggleEnemyFreeze(self, freeze = True):$/;"	m	class:Game
+toggleEnemyFreeze	.\tanks.py	/^	def toggleEnemyFreeze(self, freeze = True):$/;"	m	class:Game
+toggleFlash	.\bak_tanks.py	/^	def toggleFlash(self):$/;"	m	class:Enemy
+toggleFlash	.\tanks.py	/^	def toggleFlash(self):$/;"	m	class:Enemy
+toggleShieldImage	.\bak_tanks.py	/^	def toggleShieldImage(self):$/;"	m	class:Tank
+toggleShieldImage	.\tanks.py	/^	def toggleShieldImage(self):$/;"	m	class:Tank
+toggleSpawnImage	.\bak_tanks.py	/^	def toggleSpawnImage(self):$/;"	m	class:Tank
+toggleSpawnImage	.\tanks.py	/^	def toggleSpawnImage(self):$/;"	m	class:Tank
+toggleVisibility	.\bak_tanks.py	/^	def toggleVisibility(self):$/;"	m	class:Bonus
+toggleVisibility	.\tanks.py	/^	def toggleVisibility(self):$/;"	m	class:Bonus
+toggleWaves	.\bak_tanks.py	/^	def toggleWaves(self):$/;"	m	class:Level
+toggleWaves	.\tanks.py	/^	def toggleWaves(self):$/;"	m	class:Level
+triggerBonus	.\bak_tanks.py	/^	def triggerBonus(self, bonus, player):$/;"	m	class:Game
+triggerBonus	.\tanks.py	/^	def triggerBonus(self, bonus, player):$/;"	m	class:Game
+turnAround	.\bak_tanks.py	/^	def turnAround(self):$/;"	m	class:Tank
+turnAround	.\tanks.py	/^	def turnAround(self):$/;"	m	class:Tank
+update	.\bak_tanks.py	/^	def update(self):$/;"	m	class:Bullet
+update	.\bak_tanks.py	/^	def update(self):$/;"	m	class:Explosion
+update	.\bak_tanks.py	/^	def update(self, time_passed):$/;"	m	class:Enemy
+update	.\bak_tanks.py	/^	def update(self, time_passed):$/;"	m	class:Tank
+update	.\bak_tanks.py	/^	def update(self, time_passed):$/;"	m	class:Timer
+update	.\tanks.py	/^	def update(self):$/;"	m	class:Bullet
+update	.\tanks.py	/^	def update(self):$/;"	m	class:Explosion
+update	.\tanks.py	/^	def update(self, time_passed):$/;"	m	class:Enemy
+update	.\tanks.py	/^	def update(self, time_passed):$/;"	m	class:Tank
+update	.\tanks.py	/^	def update(self, time_passed):$/;"	m	class:Timer
+updateObstacleRects	.\bak_tanks.py	/^	def updateObstacleRects(self):$/;"	m	class:Level
+updateObstacleRects	.\tanks.py	/^	def updateObstacleRects(self):$/;"	m	class:Level
+uuid	.\bak_tanks.py	/^import os, pygame, time, random, uuid$/;"	i
+uuid	.\tanks.py	/^import os, pygame, time, random, uuid$/;"	i
+writeInBricks	.\bak_tanks.py	/^	def writeInBricks(self, text, pos):$/;"	m	class:Game
+writeInBricks	.\tanks.py	/^	def writeInBricks(self, text, pos):$/;"	m	class:Game
