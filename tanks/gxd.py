@@ -10,14 +10,14 @@ class Timer(object):
     def __init__(self):
         self.timers = []
 
-    def add(self, interval, f, repeat = -1):
+    def add(self, interval, f, repeat=-1):
         options = {
-            "interval"    : interval,
-            "callback"    : f,
-            "repeat"        : repeat,
-            "times"            : 0,
-            "time"            : 0,
-            "uuid"            : uuid.uuid4()
+            "interval": interval,
+            "callback": f,
+            "repeat": repeat,
+            "times": 0,
+            "time": 0,
+            "uuid": uuid.uuid4()
         }
         self.timers.append(options)
 
@@ -40,13 +40,13 @@ class Timer(object):
                 else:
                     timer["callback"]()
 
-    def inc_interval(self,uuid,interval):
+    def inc_interval(self, uuid, interval):
         for timer in self.timers:
             if timer["uuid"] == uuid:
                 timer["interval"] += interval
 
 
-class Map():
+class Map:
     (TILE_EMPTY, TILE_BRICK, TILE_STEEL, TILE_WATER, TILE_GRASS, TILE_FROZE) = range(6)
     TILE_SIZE = 16
 
@@ -73,7 +73,7 @@ class Map():
 
         self.mapr = []
 
-        level_nr = 0 if level_nr == None else level_nr%35
+        level_nr = 0 if level_nr == None else level_nr % 35
         '''
         if level_nr == 0:
             level_nr = 35
@@ -84,16 +84,16 @@ class Map():
         self.loadLevel(level_nr)
         self.updateObstacleRects()
 
-        gtimer.add(400, lambda :self.toggleWaves())
+        gtimer.add(400, lambda: self.toggleWaves())
 
-    def hitTile(self, pos, power = 1, sound = False):
+    def hitTile(self, pos, power=1, sound=False):
         """
             Hit the tile
             @param pos Tile's x, y in px
             @return True if bullet was stopped, False otherwise
         """
 
-        #global play_sounds, sounds
+        # global play_sounds, sounds
 
         for tile in self.mapr:
             if tile[1].topleft == pos:
@@ -117,8 +117,8 @@ class Map():
                 else:
                     return False
 
-    def loadLevel(self, level_nr = 1):
-        filename = "levels/"+str(level_nr)
+    def loadLevel(self, level_nr=1):
+        filename = "levels/" + str(level_nr)
         if (not os.path.isfile(filename)):
             return False
         level = []
@@ -150,7 +150,7 @@ class Map():
         else:
             self.tile_water = self.tile_water1
 
-    def draw(self, tiles = None):
+    def draw(self, tiles=None):
         """ Draw specified map on top of existing surface """
 
         global screen
@@ -175,7 +175,7 @@ class Map():
         """ Set self.obstacle_rects to all tiles' rects that players can destroy
         with bullets """
 
-        #global castle
+        # global castle
 
         self.obstacle_rects = [self.castle.rect]
 
@@ -187,14 +187,14 @@ class Map():
         """ Build walls around castle made from tile """
 
         positions = [
-            (11*self.TILE_SIZE, 23*self.TILE_SIZE),
-            (11*self.TILE_SIZE, 24*self.TILE_SIZE),
-            (11*self.TILE_SIZE, 25*self.TILE_SIZE),
-            (14*self.TILE_SIZE, 23*self.TILE_SIZE),
-            (14*self.TILE_SIZE, 24*self.TILE_SIZE),
-            (14*self.TILE_SIZE, 25*self.TILE_SIZE),
-            (12*self.TILE_SIZE, 23*self.TILE_SIZE),
-            (13*self.TILE_SIZE, 23*self.TILE_SIZE)
+            (11 * self.TILE_SIZE, 23 * self.TILE_SIZE),
+            (11 * self.TILE_SIZE, 24 * self.TILE_SIZE),
+            (11 * self.TILE_SIZE, 25 * self.TILE_SIZE),
+            (14 * self.TILE_SIZE, 23 * self.TILE_SIZE),
+            (14 * self.TILE_SIZE, 24 * self.TILE_SIZE),
+            (14 * self.TILE_SIZE, 25 * self.TILE_SIZE),
+            (12 * self.TILE_SIZE, 23 * self.TILE_SIZE),
+            (13 * self.TILE_SIZE, 23 * self.TILE_SIZE)
         ]
 
         obsolete = []
@@ -211,15 +211,15 @@ class Map():
         self.updateObstacleRects()
 
 
-class Bullet():
+class Bullet:
     (DIR_UP, DIR_LEFT, DIR_DOWN, DIR_RIGHT) = range(4)
 
     (STATE_REMOVED, STATE_ACTIVE, STATE_EXPLODING) = range(3)
 
-    def __init__(self,position, direction,map):
+    def __init__(self, position, direction, map):
         global sprites
 
-        self.image = sprites.subsurface(75*2, 74*2, 3*2, 4*2)
+        self.image = sprites.subsurface(75 * 2, 74 * 2, 3 * 2, 4 * 2)
         self.direction = direction
 
         if direction == self.DIR_UP:
@@ -237,7 +237,6 @@ class Bullet():
         self.state = self.STATE_ACTIVE
         self.map = map
 
-    
     def draw(self):
         """ draw bullet """
         global screen
@@ -254,7 +253,7 @@ class Bullet():
                 self.destroy()
         elif self.direction == self.DIR_RIGHT:
             self.rect.left += 8
-            if self.rect.left+13 > 480:
+            if self.rect.left + 13 > 480:
                 self.destroy()
         elif self.direction == self.DIR_UP:
             self.rect.top -= 8
@@ -262,7 +261,7 @@ class Bullet():
                 self.destroy()
         elif self.direction == self.DIR_DOWN:
             self.rect.top += 8
-            if self.rect.top+15 > 416:
+            if self.rect.top + 15 > 416:
                 self.destroy()
 
         castle = self.map.castle
@@ -281,29 +280,31 @@ class Bullet():
     def destroy(self):
         self.state = self.STATE_REMOVED
 
-class Tank():
-    (DIR_UP,DIR_LEFT , DIR_DOWN, DIR_RIGHT) = range(4)
-    def __init__(self,map):
+
+class Tank:
+    (DIR_UP, DIR_LEFT, DIR_DOWN, DIR_RIGHT) = range(4)
+
+    def __init__(self, map):
         global sprites
-        self.image_up = sprites.subsurface(0,0,13*2,15*2) 
+        self.image_up = sprites.subsurface(0, 0, 13 * 2, 15 * 2)
         self.image = self.image_up
-        self.image_left = pygame.transform.rotate(self.image, 90*1)
-        self.image_down = pygame.transform.rotate(self.image, 90*2)
-        self.image_right = pygame.transform.rotate(self.image, 90*3)
-        self.images = [self.image_up,self.image_left,self.image_down,self.image_right]
+        self.image_left = pygame.transform.rotate(self.image, 90 * 1)
+        self.image_down = pygame.transform.rotate(self.image, 90 * 2)
+        self.image_right = pygame.transform.rotate(self.image, 90 * 3)
+        self.images = [self.image_up, self.image_left, self.image_down, self.image_right]
 
         self.direction = self.DIR_UP
 
-        #self.rect = self.image.get_rect()
-        self.rect = pygame.Rect(16*8, 16*24, 26,26)
+        # self.rect = self.image.get_rect()
+        self.rect = pygame.Rect(16 * 8, 16 * 24, 26, 26)
         self.x_s = 0
         self.y_s = 0
 
         self.map = map
-        self.speed = 2 
+        self.speed = 2
 
     def fire(self):
-        bullet = Bullet( self.rect.topleft, self.direction, self.map)
+        bullet = Bullet(self.rect.topleft, self.direction, self.map)
         return bullet
 
     def rotate(self, direction):
@@ -311,7 +312,7 @@ class Tank():
         self.direction = direction
 
     def move(self, direction):
-        if (self.direction!= direction):
+        if (self.direction != direction):
             self.rotate(direction)
 
         if direction == self.DIR_UP:
@@ -338,33 +339,31 @@ class Tank():
 
         self.rect.topleft = new_position
 
-
-
     def draw(self):
         global screen
 
-        screen.blit(self.image,self.rect.topleft)
+        screen.blit(self.image, self.rect.topleft)
 
-class Castle():
+
+class Castle:
     """ Player's castle/fortress """
 
     (STATE_STANDING, STATE_DESTROYED, STATE_EXPLODING) = range(3)
 
     def __init__(self):
-
         global sprites
 
         # images
-        self.img_undamaged = sprites.subsurface(0, 15*2, 16*2, 16*2)
-        self.img_destroyed = sprites.subsurface(16*2, 15*2, 16*2, 16*2)
+        self.img_undamaged = sprites.subsurface(0, 15 * 2, 16 * 2, 16 * 2)
+        self.img_destroyed = sprites.subsurface(16 * 2, 15 * 2, 16 * 2, 16 * 2)
         self.image = self.img_undamaged
 
         # init position
-        self.rect = pygame.Rect(12*16, 24*16, 32, 32)
+        self.rect = pygame.Rect(12 * 16, 24 * 16, 32, 32)
         self.active = True
 
         # start w/ undamaged and shiny castle
-        #self.rebuild()
+        # self.rebuild()
 
     def draw(self):
         """ Draw castle """
@@ -383,14 +382,15 @@ class Castle():
 
     def destroy(self):
         """ Destroy castle """
-        #self.state = self.STATE_EXPLODING
-        #self.explosion = Explosion(self.rect.topleft)
+        # self.state = self.STATE_EXPLODING
+        # self.explosion = Explosion(self.rect.topleft)
         self.image = self.img_destroyed
         self.active = False
 
-    
-class Game():
-    (DIR_UP,DIR_LEFT , DIR_DOWN, DIR_RIGHT) = range(4)
+
+class Game:
+    (DIR_UP, DIR_LEFT, DIR_DOWN, DIR_RIGHT) = range(4)
+
     def __init__(self):
         global screen
         pygame.init()
@@ -399,9 +399,9 @@ class Game():
         size = width, height = 480, 416
         screen = pygame.display.set_mode(size)
         self.clock = pygame.time.Clock()
-        self.black = [0,0,0]
+        self.black = [0, 0, 0]
 
-        self.pressed = [False]*4
+        self.pressed = [False] * 4
 
         self.bullet = None
         self.castle = Castle()
@@ -474,7 +474,7 @@ if __name__ == "__main__":
     gtimer = Timer()
     screen = None
     sprites = pygame.transform.scale(pygame.image.load("images/sprites.gif"), [192, 256])
-    g=Game()
+    g = Game()
     flag = True
     while flag:
         flag = g.draw()
